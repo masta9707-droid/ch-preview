@@ -4,91 +4,92 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>MANJAM Archive — Chrome Hearts</title>
+<title>MANJAM Archive</title>
 <style>
   :root { --ink:#1a1a1a; --accent:#4A5D6B; --line:#e8e6e2; }
   * { box-sizing:border-box; margin:0; padding:0; }
   body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; color:var(--ink); background:#fbfaf8; }
-  header { background:#fff; border-bottom:1px solid var(--line); padding:18px 16px; position:sticky; top:0; z-index:6; }
+  header { background:#fff; border-bottom:1px solid var(--line); padding:16px; position:sticky; top:0; z-index:6; }
   .brand { font-size:20px; letter-spacing:4px; font-weight:700; }
   .brand span { color:var(--accent); }
   .tagline { font-size:11px; color:#8a8a8a; letter-spacing:1px; margin-top:2px; }
   .meta { font-size:12px; color:var(--accent); margin-top:6px; }
   .groups { display:flex; gap:10px; padding:12px 16px 0; }
-  .gtab { flex:1; border:1px solid var(--line); background:#fff; border-radius:10px; padding:12px 8px; font-size:14px; font-weight:700; cursor:pointer; color:#555; text-align:center; }
+  .gtab { flex:1; border:1px solid var(--line); background:#fff; border-radius:10px; padding:12px 8px; font-size:15px; font-weight:700; cursor:pointer; color:#555; text-align:center; }
   .gtab small { display:block; font-weight:400; font-size:11px; color:#999; margin-top:2px; }
   .gtab.on { background:var(--ink); color:#fff; border-color:var(--ink); }
   .gtab.on small { color:#c9c9c9; }
-  .tabs { display:flex; gap:8px; overflow-x:auto; padding:10px 16px; background:#fff; border-bottom:1px solid var(--line); -webkit-overflow-scrolling:touch; position:sticky; top:92px; z-index:5; }
-  .tab { flex:0 0 auto; border:1px solid var(--line); background:#fff; border-radius:999px; padding:7px 14px; font-size:13px; cursor:pointer; color:#555; }
+  .tabs { display:flex; gap:8px; overflow-x:auto; padding:10px 16px; background:#fff; border-bottom:1px solid var(--line); -webkit-overflow-scrolling:touch; position:sticky; top:118px; z-index:5; }
+  .tab { flex:0 0 auto; border:1px solid var(--line); background:#fff; border-radius:999px; padding:6px 14px; font-size:13px; cursor:pointer; color:#555; }
   .tab.on { background:var(--accent); color:#fff; border-color:var(--accent); }
-  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:12px; padding:14px; }
-  .card { background:#fff; border:1px solid var(--line); border-radius:10px; overflow:hidden; }
-  .card img { width:100%; aspect-ratio:1; object-fit:contain; background:#fff; display:block; }
-  .pad { padding:10px 10px 12px; }
-  .nm { font-size:12.5px; font-weight:600; line-height:1.35; min-height:34px; }
-  .pr { font-size:14px; font-weight:700; margin-top:4px; }
-  .cd { display:inline-block; font-size:10px; letter-spacing:.5px; margin-top:5px; padding:2px 7px; border-radius:3px; }
-  .new { background:#eef3f0; color:#2e6b4f; } .used { background:#f6efe6; color:#8a6a33; }
-  .dt { font-size:11px; color:#777; margin-top:5px; line-height:1.45; }
-  .cnt { color:#999; font-size:12px; padding:2px 16px 0; }
+  .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; padding:14px 16px 60px; }
+  @media(min-width:700px){ .grid{grid-template-columns:repeat(4,1fr);} }
+  .card { background:#fff; border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  .ph { width:100%; aspect-ratio:1/1.08; object-fit:contain; background:#fff; display:block; }
+  .noph { width:100%; aspect-ratio:1/1.08; display:flex; align-items:center; justify-content:center; background:linear-gradient(145deg,#f4f2ef,#e9e6e1); color:#9a958d; font-size:12px; letter-spacing:2px; text-align:center; }
+  .info { padding:10px 12px 12px; }
+  .nm { font-size:13px; font-weight:600; line-height:1.35; min-height:36px; }
+  .sub { font-size:11px; color:#8a8a8a; margin-top:3px; }
+  .row { display:flex; justify-content:space-between; align-items:center; margin-top:8px; }
+  .pr { font-size:14px; font-weight:700; color:var(--accent); }
+  .eur { font-size:10px; color:#b0aba4; font-weight:400; }
+  .cond { font-size:10px; padding:2px 8px; border-radius:999px; border:1px solid var(--line); color:#777; }
+  .cond.new { border-color:#bcd3c6; color:#2e6b4f; background:#f2f8f4; }
+  .badge { display:inline-block; font-size:9px; letter-spacing:1px; color:#8a8a8a; border:1px solid var(--line); border-radius:4px; padding:1px 5px; margin-bottom:4px; }
+  .count { text-align:center; font-size:12px; color:#999; padding:4px; }
+  a.card { text-decoration:none; color:inherit; display:block; }
 </style>
 </head>
 <body>
 <header>
   <div class="brand">MANJAM <span>ARCHIVE</span></div>
-  <div class="tagline">FOUND GLOBALLY. CHOSEN PRECISELY.</div>
-  <div class="meta" id="meta">Chrome Hearts — đang tải bộ sưu tập…</div>
+  <div class="tagline">Found Globally. Chosen Precisely.</div>
+  <div class="meta" id="meta">Đang tải…</div>
+  <div class="groups" id="groups"></div>
 </header>
-<div class="groups" id="groups"></div>
 <div class="tabs" id="tabs"></div>
-<div class="cnt" id="cnt"></div>
 <div class="grid" id="grid"></div>
+<div class="count" id="count"></div>
 <script>
-let ALL = [], G = 0, CAT = 'all';
-const GROUPS = [
-  { name: 'Trang sức & Phụ kiện', cats: ['Kính','Nhẫn','Dây chuyền','Vòng tay','Bông tai','Da','Linh tinh'] },
-  { name: 'Quần áo', cats: ['Quần áo'] }
-];
-fetch('items.json').then(r=>r.json()).then(items=>{
-  ALL = items;
-  const newC = items.filter(i=>i.cond==='Mới').length;
-  document.getElementById('meta').textContent =
-    'Chrome Hearts — ' + items.length + ' món • ' + newC + ' mới / ' + (items.length-newC) + ' đã dùng • giá USD, đã gồm ship DDP';
+let items = [], group = 'CH', cat = 'all';
+const CH_CATS = ['Kính','Nhẫn','Dây chuyền','Vòng tay','Bông tai','Da','Quần áo','Linh tinh'];
+const FR_CATS = ['Túi','Phụ kiện','Giày','Đồng hồ','Trang sức','Ví & Pochette','Khăn'];
+
+async function boot(){
+  items = await (await fetch('items.json')).json();
+  const nch = items.filter(i=>i.src==='CHROMEHEARTS').length;
+  const nfr = items.length - nch;
+  document.getElementById('meta').textContent = items.length + ' món — giá USD' + (nfr? ' (Farfetch quy đổi 1€ = $1.16)':'');
+  render();
+}
+function render(){
   const g = document.getElementById('groups');
-  GROUPS.forEach((grp,gi)=>{
-    const b=document.createElement('button'); b.className='gtab'+(gi===0?' on':'');
-    const n=items.filter(i=>grp.cats.includes(i.cat)).length;
-    b.innerHTML = grp.name + '<small>' + n + ' món</small>';
-    b.onclick=()=>{ G=gi; CAT='all'; document.querySelectorAll('.gtab').forEach(x=>x.classList.remove('on')); b.classList.add('on'); drawTabs(); draw(); };
-    g.appendChild(b);
-  });
-  drawTabs(); draw();
-});
-function drawTabs(){
-  const t=document.getElementById('tabs'); t.innerHTML='';
-  const grp=GROUPS[G];
-  const cats=['all',...grp.cats.filter(c=>ALL.some(i=>i.cat===c))];
-  cats.forEach(c=>{
-    const b=document.createElement('button'); b.className='tab'+(c===CAT?' on':'');
-    b.textContent = c==='all' ? 'Tất cả' : (c+' ('+ALL.filter(i=>i.cat===c).length+')');
-    b.onclick=()=>{ CAT=c; document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on')); b.classList.add('on'); draw(); };
-    t.appendChild(b);
-  });
+  const nch = items.filter(i=>i.src==='CHROMEHEARTS').length;
+  const nfr = items.length - nch;
+  g.innerHTML =
+    '<div class="gtab '+(group==='CH'?'on':'')+'" onclick="setGroup(\'CH\')">Chrome Hearts<small>'+nch+' món</small></div>' +
+    (nfr? '<div class="gtab '+(group==='FR'?'on':'')+'" onclick="setGroup(\'FR\')">Hermès Farfetch Pháp<small>'+nfr+' món · đang bổ sung ảnh</small></div>':'');
+  document.querySelectorAll('.gtab').forEach(t=>t.style.flex='1');
+  const cats = (group==='CH'?CH_CATS:FR_CATS).filter(c=>items.some(i=>(group==='CH'?'CHROMEHEARTS':'FARFETCH')===i.src&&i.cat===c));
+  const tb = document.getElementById('tabs');
+  tb.innerHTML = '<div class="tab '+(cat==='all'?'on':'')+'" onclick="setCat(\'all\')">Tất cả</div>' +
+    cats.map(c=>'<div class="tab '+(cat===c?'on':'')+'" onclick="setCat(\''+c+'\')">'+c+'</div>').join('');
+  let list = items.filter(i=>(group==='CH'?'CHROMEHEARTS':'FARFETCH')===i.src && (cat==='all'||i.cat===cat));
+  document.getElementById('grid').innerHTML = list.map(card).join('');
+  document.getElementById('count').textContent = list.length + ' món';
 }
-function draw(){
-  const grp=GROUPS[G];
-  let list = ALL.filter(i=>grp.cats.includes(i.cat));
-  if (CAT!=='all') list=list.filter(i=>i.cat===CAT);
-  document.getElementById('cnt').textContent = list.length + ' món';
-  document.getElementById('grid').innerHTML = list.map(i=>{
-    const d=[i.size&&('Size '+i.size),i.lens&&(i.lens==='SUN'?'Kính râm':'Kính tròng'),i.color].filter(Boolean).join(' • ');
-    return '<div class="card"><img loading="lazy" src="'+i.img+'"><div class="pad">'+
-      '<div class="nm">'+i.name+'</div><div class="pr">$'+i.price.toLocaleString()+'</div>'+
-      '<span class="cd '+(i.cond==='Mới'?'new':'used')+'">'+i.cond+'</span>'+
-      (d?'<div class="dt">'+d+'</div>':'')+'</div></div>';
-  }).join('');
+function card(i){
+  const img = i.img ? '<img class="ph" loading="lazy" src="'+i.img+'" alt="">' : '<div class="noph">'+(i.brand||'')+'<br>chờ ảnh</div>';
+  const sub = [i.size&&i.size!=='OS'?('Size '+i.size):'', i.lens||'', i.color||''].filter(Boolean).join(' · ');
+  const inner = img + '<div class="info"><div class="badge">'+(i.src==='FARFETCH'?'FARFETCH FR · HERMÈS':'CHROME HEARTS')+'</div><div class="nm">'+esc(i.name)+'</div>'
+    + (sub?'<div class="sub">'+esc(sub)+'</div>':'')
+    + '<div class="row"><div class="pr">$'+Number(i.price).toLocaleString('en-US')+(i.eur?' <span class="eur">('+Number(i.eur).toLocaleString('fr-FR')+' €)</span>':'')+'</div><div class="cond '+(i.cond==='Mới'?'new':'')+'">'+(i.cond||'')+'</div></div></div>';
+  return i.url ? '<a class="card" href="'+i.url+'" target="_blank" rel="noopener">'+inner+'</a>' : '<div class="card">'+inner+'</div>';
 }
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function setGroup(g){ group=g; cat='all'; render(); }
+function setCat(c){ cat=c; render(); }
+boot();
 </script>
 </body>
 </html>
