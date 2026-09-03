@@ -9,14 +9,19 @@
   :root { --ink:#1a1a1a; --accent:#4A5D6B; --line:#e8e6e2; }
   * { box-sizing:border-box; margin:0; padding:0; }
   body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; color:var(--ink); background:#fbfaf8; }
-  header { background:#fff; border-bottom:1px solid var(--line); padding:18px 16px; position:sticky; top:0; z-index:5; }
+  header { background:#fff; border-bottom:1px solid var(--line); padding:18px 16px; position:sticky; top:0; z-index:6; }
   .brand { font-size:20px; letter-spacing:4px; font-weight:700; }
   .brand span { color:var(--accent); }
   .tagline { font-size:11px; color:#8a8a8a; letter-spacing:1px; margin-top:2px; }
   .meta { font-size:12px; color:var(--accent); margin-top:6px; }
-  .tabs { display:flex; gap:8px; overflow-x:auto; padding:12px 16px; background:#fff; border-bottom:1px solid var(--line); -webkit-overflow-scrolling:touch; }
+  .groups { display:flex; gap:10px; padding:12px 16px 0; }
+  .gtab { flex:1; border:1px solid var(--line); background:#fff; border-radius:10px; padding:12px 8px; font-size:14px; font-weight:700; cursor:pointer; color:#555; text-align:center; }
+  .gtab small { display:block; font-weight:400; font-size:11px; color:#999; margin-top:2px; }
+  .gtab.on { background:var(--ink); color:#fff; border-color:var(--ink); }
+  .gtab.on small { color:#c9c9c9; }
+  .tabs { display:flex; gap:8px; overflow-x:auto; padding:10px 16px; background:#fff; border-bottom:1px solid var(--line); -webkit-overflow-scrolling:touch; position:sticky; top:92px; z-index:5; }
   .tab { flex:0 0 auto; border:1px solid var(--line); background:#fff; border-radius:999px; padding:7px 14px; font-size:13px; cursor:pointer; color:#555; }
-  .tab.on { background:var(--ink); color:#fff; border-color:var(--ink); }
+  .tab.on { background:var(--accent); color:#fff; border-color:var(--accent); }
   .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:12px; padding:14px; }
   .card { background:#fff; border:1px solid var(--line); border-radius:10px; overflow:hidden; }
   .card img { width:100%; aspect-ratio:1; object-fit:contain; background:#fff; display:block; }
@@ -35,29 +40,46 @@
   <div class="tagline">FOUND GLOBALLY. CHOSEN PRECISELY.</div>
   <div class="meta" id="meta">Chrome Hearts — đang tải bộ sưu tập…</div>
 </header>
+<div class="groups" id="groups"></div>
 <div class="tabs" id="tabs"></div>
 <div class="cnt" id="cnt"></div>
 <div class="grid" id="grid"></div>
 <script>
-let ALL = [], CAT = 'all';
-const ORDER = ['Kính','Nhẫn','Dây chuyền','Vòng tay','Bông tai','Quần áo','Da','Linh tinh'];
+let ALL = [], G = 0, CAT = 'all';
+const GROUPS = [
+  { name: 'Trang sức & Phụ kiện', cats: ['Kính','Nhẫn','Dây chuyền','Vòng tay','Bông tai','Da','Linh tinh'] },
+  { name: 'Quần áo', cats: ['Quần áo'] }
+];
 fetch('items.json').then(r=>r.json()).then(items=>{
   ALL = items;
   const newC = items.filter(i=>i.cond==='Mới').length;
   document.getElementById('meta').textContent =
     'Chrome Hearts — ' + items.length + ' món • ' + newC + ' mới / ' + (items.length-newC) + ' đã dùng • giá USD, đã gồm ship DDP';
-  const t = document.getElementById('tabs');
-  const cats = ['all', ...ORDER.filter(c=>items.some(i=>i.cat===c)), ...[...new Set(items.map(i=>i.cat))].filter(c=>!ORDER.includes(c))];
+  const g = document.getElementById('groups');
+  GROUPS.forEach((grp,gi)=>{
+    const b=document.createElement('button'); b.className='gtab'+(gi===0?' on':'');
+    const n=items.filter(i=>grp.cats.includes(i.cat)).length;
+    b.innerHTML = grp.name + '<small>' + n + ' món</small>';
+    b.onclick=()=>{ G=gi; CAT='all'; document.querySelectorAll('.gtab').forEach(x=>x.classList.remove('on')); b.classList.add('on'); drawTabs(); draw(); };
+    g.appendChild(b);
+  });
+  drawTabs(); draw();
+});
+function drawTabs(){
+  const t=document.getElementById('tabs'); t.innerHTML='';
+  const grp=GROUPS[G];
+  const cats=['all',...grp.cats.filter(c=>ALL.some(i=>i.cat===c))];
   cats.forEach(c=>{
-    const b=document.createElement('button'); b.className='tab'+(c==='all'?' on':'');
-    b.textContent = c==='all' ? ('Tất cả ('+items.length+')') : (c+' ('+items.filter(i=>i.cat===c).length+')');
+    const b=document.createElement('button'); b.className='tab'+(c===CAT?' on':'');
+    b.textContent = c==='all' ? 'Tất cả' : (c+' ('+ALL.filter(i=>i.cat===c).length+')');
     b.onclick=()=>{ CAT=c; document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on')); b.classList.add('on'); draw(); };
     t.appendChild(b);
   });
-  draw();
-});
+}
 function draw(){
-  const list = CAT==='all' ? ALL : ALL.filter(i=>i.cat===CAT);
+  const grp=GROUPS[G];
+  let list = ALL.filter(i=>grp.cats.includes(i.cat));
+  if (CAT!=='all') list=list.filter(i=>i.cat===CAT);
   document.getElementById('cnt').textContent = list.length + ' món';
   document.getElementById('grid').innerHTML = list.map(i=>{
     const d=[i.size&&('Size '+i.size),i.lens&&(i.lens==='SUN'?'Kính râm':'Kính tròng'),i.color].filter(Boolean).join(' • ');
