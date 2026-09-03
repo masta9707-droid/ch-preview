@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>MANJAM Archive — Chrome Hearts</title>
+<style>
+  :root { --ink:#1a1a1a; --accent:#4A5D6B; --line:#e8e6e2; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; color:var(--ink); background:#fbfaf8; }
+  header { background:#fff; border-bottom:1px solid var(--line); padding:18px 16px; position:sticky; top:0; z-index:5; }
+  .brand { font-size:20px; letter-spacing:4px; font-weight:700; }
+  .brand span { color:var(--accent); }
+  .tagline { font-size:11px; color:#8a8a8a; letter-spacing:1px; margin-top:2px; }
+  .meta { font-size:12px; color:var(--accent); margin-top:6px; }
+  .tabs { display:flex; gap:8px; overflow-x:auto; padding:12px 16px; background:#fff; border-bottom:1px solid var(--line); -webkit-overflow-scrolling:touch; }
+  .tab { flex:0 0 auto; border:1px solid var(--line); background:#fff; border-radius:999px; padding:7px 14px; font-size:13px; cursor:pointer; color:#555; }
+  .tab.on { background:var(--ink); color:#fff; border-color:var(--ink); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:12px; padding:14px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+  .card img { width:100%; aspect-ratio:1; object-fit:contain; background:#fff; display:block; }
+  .pad { padding:10px 10px 12px; }
+  .nm { font-size:12.5px; font-weight:600; line-height:1.35; min-height:34px; }
+  .pr { font-size:14px; font-weight:700; margin-top:4px; }
+  .cd { display:inline-block; font-size:10px; letter-spacing:.5px; margin-top:5px; padding:2px 7px; border-radius:3px; }
+  .new { background:#eef3f0; color:#2e6b4f; } .used { background:#f6efe6; color:#8a6a33; }
+  .dt { font-size:11px; color:#777; margin-top:5px; line-height:1.45; }
+  .cnt { color:#999; font-size:12px; padding:2px 16px 0; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">MANJAM <span>ARCHIVE</span></div>
+  <div class="tagline">FOUND GLOBALLY. CHOSEN PRECISELY.</div>
+  <div class="meta" id="meta">Chrome Hearts — đang tải bộ sưu tập…</div>
+</header>
+<div class="tabs" id="tabs"></div>
+<div class="cnt" id="cnt"></div>
+<div class="grid" id="grid"></div>
+<script>
+let ALL = [], CAT = 'all';
+const ORDER = ['Kính','Nhẫn','Dây chuyền','Vòng tay','Bông tai','Quần áo','Da','Linh tinh'];
+fetch('items.json').then(r=>r.json()).then(items=>{
+  ALL = items;
+  const newC = items.filter(i=>i.cond==='Mới').length;
+  document.getElementById('meta').textContent =
+    'Chrome Hearts — ' + items.length + ' món • ' + newC + ' mới / ' + (items.length-newC) + ' đã dùng • giá USD, đã gồm ship DDP';
+  const t = document.getElementById('tabs');
+  const cats = ['all', ...ORDER.filter(c=>items.some(i=>i.cat===c)), ...[...new Set(items.map(i=>i.cat))].filter(c=>!ORDER.includes(c))];
+  cats.forEach(c=>{
+    const b=document.createElement('button'); b.className='tab'+(c==='all'?' on':'');
+    b.textContent = c==='all' ? ('Tất cả ('+items.length+')') : (c+' ('+items.filter(i=>i.cat===c).length+')');
+    b.onclick=()=>{ CAT=c; document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on')); b.classList.add('on'); draw(); };
+    t.appendChild(b);
+  });
+  draw();
+});
+function draw(){
+  const list = CAT==='all' ? ALL : ALL.filter(i=>i.cat===CAT);
+  document.getElementById('cnt').textContent = list.length + ' món';
+  document.getElementById('grid').innerHTML = list.map(i=>{
+    const d=[i.size&&('Size '+i.size),i.lens&&(i.lens==='SUN'?'Kính râm':'Kính tròng'),i.color].filter(Boolean).join(' • ');
+    return '<div class="card"><img loading="lazy" src="'+i.img+'"><div class="pad">'+
+      '<div class="nm">'+i.name+'</div><div class="pr">$'+i.price.toLocaleString()+'</div>'+
+      '<span class="cd '+(i.cond==='Mới'?'new':'used')+'">'+i.cond+'</span>'+
+      (d?'<div class="dt">'+d+'</div>':'')+'</div></div>';
+  }).join('');
+}
+</script>
+</body>
+</html>
