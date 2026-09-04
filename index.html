@@ -37,7 +37,25 @@
   .cond.new { border-color:#bcd3c6; color:#2e6b4f; background:#f2f8f4; }
   .badge { display:inline-block; font-size:9px; letter-spacing:1px; color:#8a8a8a; border:1px solid var(--line); border-radius:4px; padding:1px 5px; margin-bottom:4px; }
   .count { text-align:center; font-size:12px; color:#999; padding:4px; }
+  a.card, .card { cursor:pointer; }
   a.card { text-decoration:none; color:inherit; display:block; }
+  /* popup chi tiet */
+  .ov { position:fixed; inset:0; background:rgba(20,18,16,.72); z-index:20; display:none; overflow-y:auto; -webkit-overflow-scrolling:touch; }
+  .ov.on { display:block; }
+  .sheet { background:#fff; max-width:560px; margin:4vh auto 40px; border-radius:16px; overflow:hidden; position:relative; }
+  .x { position:absolute; top:10px; right:10px; z-index:2; width:34px; height:34px; border-radius:50%; border:none; background:rgba(0,0,0,.45); color:#fff; font-size:18px; cursor:pointer; }
+  .gal { background:#fff; }
+  .gal .main { width:100%; aspect-ratio:1/1.05; object-fit:contain; display:block; background:#fff; }
+  .thumbs { display:flex; gap:8px; padding:8px 12px; }
+  .thumbs img { width:56px; height:56px; object-fit:contain; border:1px solid var(--line); border-radius:8px; cursor:pointer; background:#fff; }
+  .thumbs img.on { border-color:var(--accent); border-width:2px; }
+  .det { padding:6px 16px 18px; }
+  .det .nm2 { font-size:17px; font-weight:700; line-height:1.35; }
+  .det .sub2 { font-size:12px; color:#8a8a8a; margin-top:4px; }
+  .det .pr2 { font-size:20px; font-weight:800; color:var(--accent); margin-top:10px; }
+  .det .eur2 { font-size:12px; color:#b0aba4; font-weight:400; }
+  .ff { display:inline-block; margin-top:14px; font-size:12px; color:#8a8a8a; border:1px solid var(--line); border-radius:999px; padding:6px 14px; text-decoration:none; }
+  .ff:hover { color:var(--accent); border-color:var(--accent); }
 </style>
 </head>
 <body>
@@ -50,6 +68,7 @@
 <div class="tabs" id="tabs"></div>
 <div class="grid" id="grid"></div>
 <div class="count" id="count"></div>
+<div class="ov" id="ov" onclick="if(event.target===this)closeDet()"><div class="sheet"><button class="x" onclick="closeDet()">×</button><div id="sheetBody"></div></div></div>
 <script>
 let items = [], group = 'CH', cat = 'all';
 const CH_CATS = ['Kính','Nhẫn','Dây chuyền','Vòng tay','Bông tai','Da','Quần áo','Linh tinh'];
@@ -75,17 +94,37 @@ function render(){
   tb.innerHTML = '<div class="tab '+(cat==='all'?'on':'')+'" onclick="setCat(\'all\')">Tất cả</div>' +
     cats.map(c=>'<div class="tab '+(cat===c?'on':'')+'" onclick="setCat(\''+c+'\')">'+c+'</div>').join('');
   let list = items.filter(i=>(group==='CH'?'CHROMEHEARTS':'FARFETCH')===i.src && (cat==='all'||i.cat===cat));
-  document.getElementById('grid').innerHTML = list.map(card).join('');
+  cur = list;
+  document.getElementById('grid').innerHTML = list.map((x,k)=>card(x,k)).join('');
   document.getElementById('count').textContent = list.length + ' món';
 }
-function card(i){
+let cur = [];
+function card(i,k){
   const img = i.img ? '<img class="ph" loading="lazy" src="'+i.img+'" alt="">' : '<div class="noph">'+(i.brand||'')+'<br>chờ ảnh</div>';
   const sub = [i.size&&i.size!=='OS'?('Size '+i.size):'', i.lens||'', i.color||''].filter(Boolean).join(' · ');
   const inner = img + '<div class="info"><div class="badge">'+(i.src==='FARFETCH'?'FARFETCH FR · HERMÈS':'CHROME HEARTS')+'</div><div class="nm">'+esc(i.name)+'</div>'
     + (sub?'<div class="sub">'+esc(sub)+'</div>':'')
     + '<div class="row"><div class="pr">$'+Number(i.price).toLocaleString('en-US')+(i.eur?' <span class="eur">('+Number(i.eur).toLocaleString('fr-FR')+' €)</span>':'')+'</div><div class="cond '+(i.cond==='Mới'?'new':'')+'">'+(i.cond||'')+'</div></div></div>';
-  return i.url ? '<a class="card" href="'+i.url+'" target="_blank" rel="noopener">'+inner+'</a>' : '<div class="card">'+inner+'</div>';
+  return '<div class="card" onclick="openDet('+k+')">'+inner+'</div>';
 }
+function openDet(k){
+  const i = cur[k]; if(!i) return;
+  const imgs = (i.imgs && i.imgs.length ? i.imgs : (i.img?[i.img]:[]));
+  const gal = imgs.length
+    ? '<div class="gal"><img class="main" id="mImg" src="'+imgs[0]+'" alt=""><div class="thumbs">'+imgs.map((u,x)=>'<img class="'+(x?'':'on')+'" src="'+u+'" onclick="pickImg(this,\''+u+'\')">').join('')+'</div></div>'
+    : '<div class="noph" style="aspect-ratio:1/1">'+(i.brand||'')+'<br>chờ ảnh tách nền</div>';
+  const sub = [i.size&&i.size!=='OS'?('Size '+i.size):'', i.lens?('Kính '+i.lens):'', i.color||'', i.mat||''].filter(Boolean).join(' · ');
+  document.getElementById('sheetBody').innerHTML = gal + '<div class="det"><div class="badge">'+(i.src==='FARFETCH'?'FARFETCH FR · HERMÈS':'CHROME HEARTS')+'</div>'
+    + '<div class="nm2">'+esc(i.name)+'</div>' + (sub?'<div class="sub2">'+esc(sub)+'</div>':'')
+    + '<div class="pr2">$'+Number(i.price).toLocaleString('en-US')+(i.eur?' <span class="eur2">('+Number(i.eur).toLocaleString('fr-FR')+' €)</span>':'')+'</div>'
+    + '<div class="sub2" style="margin-top:6px">Tình trạng: '+esc(i.cond||'—')+' · '+esc(i.cat||'')+'</div>'
+    + (i.url?'<a class="ff" href="'+i.url+'" target="_blank" rel="noopener">Xem nguồn gốc trên Farfetch ↗</a>':'')
+    + '</div>';
+  document.getElementById('ov').classList.add('on');
+  document.body.style.overflow='hidden';
+}
+function pickImg(el,u){ document.getElementById('mImg').src=u; document.querySelectorAll('.thumbs img').forEach(t=>t.classList.remove('on')); el.classList.add('on'); }
+function closeDet(){ document.getElementById('ov').classList.remove('on'); document.body.style.overflow=''; }
 function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function setGroup(g){ group=g; cat='all'; render(); }
 function setCat(c){ cat=c; render(); }
