@@ -3125,8 +3125,13 @@
   "price": 36508,
   "eur": 31472,
   "size": "OS",
-  "url": "",
-  "img": ""
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-kelly-danse-verso-item-37625654.aspx",
+  "img": "web/fr/Kelly-Danse-Verso_1.png",
+  "imgs": [
+   "web/fr/Kelly-Danse-Verso_1.png",
+   "web/fr/Kelly-Danse-Verso_2.png",
+   "web/fr/Kelly-Danse-Verso_3.png"
+  ]
  },
  {
   "src": "FARFETCH",
