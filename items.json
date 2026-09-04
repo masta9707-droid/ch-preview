@@ -2661,15 +2661,14 @@
   "name": "Birkin 25",
   "brand": "HERMÈS",
   "cond": "Mới",
-  "price": 54823,
-  "eur": 47261,
+  "price": 49099,
+  "eur": 42327,
   "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/hermes-birkin-25-item-36669047.aspx",
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-birkin-25-item-37174174.aspx",
   "img": "web/fr/Birkin-25_1.png",
   "imgs": [
    "web/fr/Birkin-25_1.png",
-   "web/fr/Birkin-25_2.png",
-   "web/fr/Birkin-25_3.png"
+   "web/fr/Birkin-25_2.png"
   ]
  },
  {
@@ -2740,10 +2739,10 @@
   "name": "Kelly Pochette",
   "brand": "HERMÈS",
   "cond": "Mới",
-  "price": 42145,
-  "eur": 36332,
+  "price": 34157,
+  "eur": 29446,
   "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/hermes-kelly-pochette-item-36242516.aspx",
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-kelly-pochette-item-37174653.aspx",
   "img": "web/fr/Kelly-Pochette_1.png",
   "imgs": [
    "web/fr/Kelly-Pochette_1.png",
@@ -2792,16 +2791,15 @@
   "name": "Birkin 30",
   "brand": "HERMÈS",
   "cond": "Mới",
-  "price": 39731,
-  "eur": 34251,
+  "price": 42483,
+  "eur": 36623,
   "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/hermes-birkin-30-item-36745818.aspx",
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-birkin-30-item-37222122.aspx",
   "img": "web/fr/Birkin-30_1.png",
   "imgs": [
    "web/fr/Birkin-30_1.png",
    "web/fr/Birkin-30_2.png",
-   "web/fr/Birkin-30_3.png",
-   "web/fr/Birkin-30_4.png"
+   "web/fr/Birkin-30_3.png"
   ]
  },
  {
@@ -2854,20 +2852,31 @@
   "price": 90642,
   "eur": 78140,
   "size": "OS",
-  "url": "",
-  "img": ""
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-mini-kelly-ii-teddy-item-36795472.aspx",
+  "img": "web/fr/Mini-Kelly-II-Teddy_1.png",
+  "imgs": [
+   "web/fr/Mini-Kelly-II-Teddy_1.png",
+   "web/fr/Mini-Kelly-II-Teddy_2.png",
+   "web/fr/Mini-Kelly-II-Teddy_3.png",
+   "web/fr/Mini-Kelly-II-Teddy_4.png"
+  ]
  },
  {
   "src": "FARFETCH",
-  "cat": "Phụ kiện",
+  "cat": "Túi",
   "name": "40cm HAC",
   "brand": "HERMÈS",
   "cond": "Mới",
   "price": 39939,
   "eur": 34430,
   "size": "OS",
-  "url": "",
-  "img": ""
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-40cm-hac-item-36813234.aspx",
+  "img": "web/fr/40cm-HAC_1.png",
+  "imgs": [
+   "web/fr/40cm-HAC_1.png",
+   "web/fr/40cm-HAC_2.png",
+   "web/fr/40cm-HAC_3.png"
+  ]
  },
  {
   "src": "FARFETCH",
@@ -2878,20 +2887,30 @@
   "price": 113507,
   "eur": 97851,
   "size": "OS",
-  "url": "",
-  "img": ""
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-kelly-dole-item-36921608.aspx",
+  "img": "web/fr/Kelly-Dole_1.png",
+  "imgs": [
+   "web/fr/Kelly-Dole_1.png",
+   "web/fr/Kelly-Dole_2.png",
+   "web/fr/Kelly-Dole_3.png",
+   "web/fr/Kelly-Dole_4.png"
+  ]
  },
  {
   "src": "FARFETCH",
-  "cat": "Giày",
+  "cat": "Trang sức",
   "name": "Bouncing Sneaker",
   "brand": "HERMÈS",
   "cond": "Mới",
   "price": 4785,
   "eur": 4125,
   "size": "OS",
-  "url": "",
-  "img": ""
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-bouncing-sneaker-item-37004717.aspx",
+  "img": "web/fr/Bouncing-Sneaker_1.png",
+  "imgs": [
+   "web/fr/Bouncing-Sneaker_1.png",
+   "web/fr/Bouncing-Sneaker_2.png"
+  ]
  },
  {
   "src": "FARFETCH",
@@ -2923,11 +2942,14 @@
   "name": "Kelly 25",
   "brand": "HERMÈS",
   "cond": "Mới",
-  "price": 45259,
-  "eur": 39016,
+  "price": 45471,
+  "eur": 39199,
   "size": "OS",
-  "url": "",
-  "img": ""
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-kelly-25-item-37215942.aspx",
+  "img": "web/fr/Kelly-25_1.png",
+  "imgs": [
+   "web/fr/Kelly-25_1.png"
+  ]
  },
  {
   "src": "FARFETCH",
@@ -2950,20 +2972,29 @@
   "price": 44617,
   "eur": 38463,
   "size": "OS",
-  "url": "",
-  "img": ""
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-mini-kelly-ii-20-item-37216454.aspx",
+  "img": "web/fr/Mini-Kelly-II-20_1.png",
+  "imgs": [
+   "web/fr/Mini-Kelly-II-20_1.png",
+   "web/fr/Mini-Kelly-II-20_2.png",
+   "web/fr/Mini-Kelly-II-20_3.png"
+  ]
  },
  {
   "src": "FARFETCH",
-  "cat": "Phụ kiện",
+  "cat": "Túi",
   "name": "Mini Verrou Chaine",
   "brand": "HERMÈS",
   "cond": "Mới",
   "price": 28417,
   "eur": 24497,
   "size": "OS",
-  "url": "",
-  "img": ""
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-mini-verrou-chaine-item-37222107.aspx",
+  "img": "web/fr/Mini-Verrou-Chaine_1.png",
+  "imgs": [
+   "web/fr/Mini-Verrou-Chaine_1.png",
+   "web/fr/Mini-Verrou-Chaine_2.png"
+  ]
  },
  {
   "src": "FARFETCH",
@@ -2974,8 +3005,13 @@
   "price": 23913,
   "eur": 20615,
   "size": "OS",
-  "url": "",
-  "img": ""
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-constance-18-item-37222118.aspx",
+  "img": "web/fr/Constance-18_1.png",
+  "imgs": [
+   "web/fr/Constance-18_1.png",
+   "web/fr/Constance-18_2.png",
+   "web/fr/Constance-18_3.png"
+  ]
  },
  {
   "src": "FARFETCH",
