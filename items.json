@@ -2619,7 +2619,8 @@
    "web/fr/Bolide-25_2.png",
    "web/fr/Bolide-25_3.png",
    "web/fr/Bolide-25_4.png"
-  ]
+  ],
+  "desc": "HERMÈS Bolide 25 | Purple | CALFSKIN | Tote Bags | Bags | Women"
  },
  {
   "src": "FARFETCH",
@@ -2635,7 +2636,8 @@
   "imgs": [
    "web/fr/Lindy-26_1.png",
    "web/fr/Lindy-26_2.png"
-  ]
+  ],
+  "desc": "HERMÈS Lindy 26 | Neutrals | Leather | Shoulder Bags | Bags | Women"
  },
  {
   "src": "FARFETCH",
@@ -2671,36 +2673,8 @@
    "web/fr/Birkin-25_2.png",
    "web/fr/Birkin-25_3.png",
    "web/fr/Birkin-25_4.png"
-  ]
- },
- {
-  "src": "FARFETCH",
-  "cat": "Giày",
-  "name": "Jumping Supple Boot",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 9550,
-  "eur": 8233,
-  "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/hermes-jumping-supple-boot-item-34669046.aspx",
-  "img": "web/fr/Jumping-Supple-Boot_1.png",
-  "imgs": [
-   "web/fr/Jumping-Supple-Boot_1.png",
-   "web/fr/Jumping-Supple-Boot_2.png",
-   "web/fr/Jumping-Supple-Boot_3.png"
-  ]
- },
- {
-  "src": "FARFETCH",
-  "cat": "Phụ kiện",
-  "name": "Pre-Owned Lima diamond 18K white gold pendant necklace",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 10803,
-  "eur": 9313,
-  "size": "OS",
-  "url": "",
-  "img": ""
+  ],
+  "desc": "HERMÈS Birkin 25 | Black | Birkin 25 in colour 89 Noir Togo leather with Gold hardware | Collection: G (2026) | Origin: France | Accompanied by: Box, Dustbag, Lock Set, Copy of receipt, Booklet, Felt | Measurements: (About) W25 × H20 × D13cm | Please be advised that this item is final sale and is not covered by our standard return policy. | Estimated time to dispatch: 2 to 4 weeks. | Calf Leather/Gold | Tote Bags | Bags | Women"
  },
  {
   "src": "FARFETCH",
@@ -2716,24 +2690,8 @@
   "imgs": [
    "web/fr/Kelly-Elan_1.png",
    "web/fr/Kelly-Elan_2.png"
-  ]
- },
- {
-  "src": "FARFETCH",
-  "cat": "Giày",
-  "name": "Chypre Suede Sandals",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 4103,
-  "eur": 3537,
-  "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/hermes-chypre-suede-sandals-item-36100192.aspx",
-  "img": "web/fr/Chypre-Suede-Sandals_1.png",
-  "imgs": [
-   "web/fr/Chypre-Suede-Sandals_1.png",
-   "web/fr/Chypre-Suede-Sandals_2.png",
-   "web/fr/Chypre-Suede-Sandals_3.png"
-  ]
+  ],
+  "desc": "HERMÈS Kelly Elan | Pink | Kelly Elan in Rose Confetti | Epsom Leather with Palladium Hardware | K Stamp | Accompanied by: Hermès box, Hermès dustbag, Felt, Strap, Strap dustbag, Care card and ribbon | Dimensions: W 10.8\" x H 5.9\" x D 1.6\" | *No receipt but comes with third party certificate | Please be advised that this item is final sale and is not covered by our standard return policy. | Estimated time to dispatch: 2 to 4 weeks. | Leather | Clutch Bags | Bags | Women"
  },
  {
   "src": "FARFETCH",
@@ -2751,7 +2709,8 @@
    "web/fr/Kelly-Pochette_2.png",
    "web/fr/Kelly-Pochette_3.png",
    "web/fr/Kelly-Pochette_4.png"
-  ]
+  ],
+  "desc": "HERMÈS Kelly Pochette | Black | Kelly Pochette in Black | Swift Leather with Palladium Hardware | B Stamp/ 2024 Receipt | Accompanied by: Original receipt, Hermès box, Hermès dustbag, felt, ribbon and care card | Measurements: 8.5\" width x 5.5\" height x 2.75\" depth; 1\" handle drop | *Imperfect box | Please be advised that this item is final sale and is not covered by our standard return policy. | Estimated time to dispatch: 2 to 4 weeks. | Calf Leather | Mini Bags | Clutch Bags | Bags | Women"
  },
  {
   "src": "FARFETCH",
@@ -2767,7 +2726,8 @@
   "imgs": [
    "web/fr/Picotin-18_1.png",
    "web/fr/Picotin-18_2.png"
-  ]
+  ],
+  "desc": "HERMÈS Picotin 18 | Orange | Picotin 18cm in Orange | Clemence Leather with Gold Hardware | B Stamp | Accompanied by: Copy receipt, Hermès box, Hermès dustbag, lock, keys, care card and ribbon | Measurements: 7\" width x 5\" height x 7.5\" depth; 5\" handles | Please be advised that this item is final sale and is not covered by our standard return policy. | Estimated time to dispatch: 2 to 4 weeks. | Leather | Tote Bags | Bags | Women"
  },
  {
   "src": "FARFETCH",
@@ -2784,7 +2744,8 @@
    "web/fr/Mini-Evelyne-TPM_1.png",
    "web/fr/Mini-Evelyne-TPM_2.png",
    "web/fr/Mini-Evelyne-TPM_3.png"
-  ]
+  ],
+  "desc": "HERMÈS Mini Evelyne TPM | Blue | Mini Evelyne TPM in Caban | Clemence Leather with Palladium Hardware | K Stamp/ 2026 Receipt | Accompanied by: Original receipt, Hermès box, Hermès dustbag, shoulder strap, shoulder strap dustbag, care card and ribbon | Measurements: L 16 x H 18 x W 5 cm | Please be advised that this item is final sale and is not covered by our standard return policy. | Estimated time to dispatch: 2 to 4 weeks. | Calf Leather/Palladium | Mini Bags | Messenger & Crossbody Bags | Bags | Women"
  },
  {
   "src": "FARFETCH",
@@ -2799,7 +2760,8 @@
   "img": "web/fr/Birkin-30_1.png",
   "imgs": [
    "web/fr/Birkin-30_1.png"
-  ]
+  ],
+  "desc": "HERMÈS Birkin 30 | Green | Birkin 30cm in Vert Amande | Retourne | Togo Leather with Palladium Hardware | W Stamp | Accompanied by: Original receipt, Hermès box, Hermès dustbag, clochette, lock, two keys, clochette dustbag, felt, rain coat, care card and ribbon. | Measurements: 11.75\" width x 9.5\" height x 6\" depth; 4.25\" handle drop | Please be advised that this item is final sale and is not covered by our standard return policy. | Estimated time to dispatch: 2 to 4 weeks. | Leather | Tote Bags | Bags | Men | Tote Bags | Bags | Women"
  },
  {
   "src": "FARFETCH",
@@ -2840,7 +2802,8 @@
    "web/fr/Birkin-35-LEnvers_1.png",
    "web/fr/Birkin-35-LEnvers_2.png",
    "web/fr/Birkin-35-LEnvers_3.png"
-  ]
+  ],
+  "desc": "HERMÈS Birkin 35 L'Envers | Black | Birkin 35 L'Envers in colour 89 Noir Volupto leather and canvas with Palladium hardware | Collection: G (2026) | Origin: France | Accompanied by: Box, Dustbag, Lock Set, Receipt, Booklet, Felt | Measurements: (About) W35 × H25 × D18cm | Please be advised that this item is final sale and is not covered by our standard return policy. | Estimated time to dispatch: 2 to 4 weeks. | Calf Leather/Canvas/Palladium | Tote Bags | Bags | Women"
  },
  {
   "src": "FARFETCH",
@@ -2858,7 +2821,8 @@
    "web/fr/Mini-Kelly-II-Teddy_2.png",
    "web/fr/Mini-Kelly-II-Teddy_3.png",
    "web/fr/Mini-Kelly-II-Teddy_4.png"
-  ]
+  ],
+  "desc": "HERMÈS Mini Kelly II Teddy | Grey | Please be advised that this item is FINAL SALE and is not covered by our standard return policy. | Estimated time to dispatch: 1 to 2 weeks. | Mini Kelly II Teddy in colour Gris Caillou and Etoupe Grizzly and Swift leather with Palladium hardware | Collection: K (2025) | Origin: France | Condition: New and never worn | Accompanied by: Box,Dustbag,Shoulder Strap,Copy of receipt,Booklet,Felt | Measurements: (About) W22 × H15.5 × D9cm | Lamb Shearling/Leather | Mini Bags | Messenger & Crossbody Bags | Bags | Women"
  },
  {
   "src": "FARFETCH",
@@ -2875,7 +2839,8 @@
    "web/fr/40cm-HAC_1.png",
    "web/fr/40cm-HAC_2.png",
    "web/fr/40cm-HAC_3.png"
-  ]
+  ],
+  "desc": "HERMÈS 40cm HAC | Blue | 40cm HAC in Denim Moyen and Black | Retourne | Denim and Togo Leather with Palladium Hardware | K Stamp | Accompanied by: Original receipt, Hermès box, Hermès dustbag, clochette, lock, two keys, clochette dustbag, care card, felt and ribbon | Measurements: 15.7\" x 12\" x 8\" | *Imperfect Box | Please be advised that this item is final sale and is not covered by our standard return policy. | Estimated time to dispatch: 2 to 4 weeks. | Cotton/Leather | Tote Bags | Bags | Men | Tote Bags | Bags | Women"
  },
  {
   "src": "FARFETCH",
@@ -2893,23 +2858,8 @@
    "web/fr/Kelly-Dole_2.png",
    "web/fr/Kelly-Dole_3.png",
    "web/fr/Kelly-Dole_4.png"
-  ]
- },
- {
-  "src": "FARFETCH",
-  "cat": "Trang sức",
-  "name": "Bouncing Sneaker",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 4785,
-  "eur": 4125,
-  "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/hermes-bouncing-sneaker-item-37004717.aspx",
-  "img": "web/fr/Bouncing-Sneaker_1.png",
-  "imgs": [
-   "web/fr/Bouncing-Sneaker_1.png",
-   "web/fr/Bouncing-Sneaker_2.png"
-  ]
+  ],
+  "desc": "HERMÈS Kelly Dole | Purple | Please be advised that this item is FINAL SALE and is not covered by our standard return policy. | Estimated time to dispatch: 1 to 2 weeks. | Kelly Dole in colour X3 Purple and 2D Dune Swift leather with Palladium hardware | Collection: G (2026) | Origin: France | Condition: New and never worn | Accompanied by: Box,Dustbag,Receipt,Felt | Measurements: (About) W16 × H12 × D7cm | Calf Leather | Mini Bags | Bags | Women"
  },
  {
   "src": "FARFETCH",
@@ -2948,7 +2898,8 @@
   "img": "web/fr/Kelly-25_1.png",
   "imgs": [
    "web/fr/Kelly-25_1.png"
-  ]
+  ],
+  "desc": "HERMÈS Kelly 25 | Red | Kelly 25cm in Rouge Radieux | Sellier | Epsom Leather with Gold Hardware | W Stamp | Accompanied by: Original receipt, Hermès box, Hermès dust bag, clochette, lock, two keys, shoulder strap, clochette dust bag, shoulder strap dust bag, and ribbon | Measurements: 9.8\" width x 7.5\" height x 3.5\" depth; 3.5\" handle drop (16.5\" shoulder strap drop) | Please be advised that this item is final sale and is not covered by our standard return policy. | Estimated time to dispatch: 2 to 4 weeks. | Calf Leather | Tote Bags | Bags | Women"
  },
  {
   "src": "FARFETCH",
@@ -2977,7 +2928,8 @@
    "web/fr/Mini-Kelly-II-20_1.png",
    "web/fr/Mini-Kelly-II-20_2.png",
    "web/fr/Mini-Kelly-II-20_3.png"
-  ]
+  ],
+  "desc": "HERMÈS Mini Kelly II 20 | Grey | Mini Kelly II 20cm in Gris Misty | Sellier | Epsom Leather with Permabrass Hardware | W Stamp | Accompanied by: Original receipt, Strap, Hermès box, Hermès dustbag, care card and ribbon | Measurements: 7.5\" width x 4.5\" height x 2.2\" depth; 2.5\" handle drop, 18.5\" Shoulder Strap Drop | Please be advised that this item is final sale and is not covered by our standard return policy. | Estimated time to dispatch: 2 to 4 weeks. | Calf Leather | Mini Bags | Bags | Women"
  },
  {
   "src": "FARFETCH",
@@ -2993,7 +2945,8 @@
   "imgs": [
    "web/fr/Mini-Verrou-Chaine_1.png",
    "web/fr/Mini-Verrou-Chaine_2.png"
-  ]
+  ],
+  "desc": "HERMÈS Mini Verrou Chaine | Neutrals | Mini Verrou Chaine in Etoupe | Chèvre Leather with Gold Hardware | B Stamp | Accompanied by: Original receipt, Hermès box, Hermès dustbag, felt, care card and ribbon | Measurements: L 17 x H 14 x D 4.2 cm | *Imperfect Box | Please be advised that this item is final sale and is not covered by our standard return policy. | Estimated time to dispatch: 2 to 4 weeks. | Leather | Mini Bags | Shoulder Bags | Bags | Women"
  },
  {
   "src": "FARFETCH",
@@ -3010,7 +2963,8 @@
    "web/fr/Constance-18_1.png",
    "web/fr/Constance-18_2.png",
    "web/fr/Constance-18_3.png"
-  ]
+  ],
+  "desc": "HERMÈS Constance 18 | Brown | Constance 18cm in Gold | Epsom Leather with Palladium Hardware | K Stamp | Accompanied by: Hermès box, Hermès dustbag, care card and felt | Measurements: 7.25\" width x 6.25\" height x 2.25\" depth; 16.5\" - adjustable shoulder strap | Please be advised that this item is final sale and is not covered by our standard return policy. | Estimated time to dispatch: 2 to 4 weeks. | Calf Leather | Shoulder Bags | Bags | Women"
  },
  {
   "src": "FARFETCH",
@@ -3111,7 +3065,8 @@
    "web/fr/Birkin-35-À-LEnvers_1.png",
    "web/fr/Birkin-35-À-LEnvers_2.png",
    "web/fr/Birkin-35-À-LEnvers_3.png"
-  ]
+  ],
+  "desc": "HERMÈS Birkin 35 À L'Envers | Multicolour | Birkin 35 À L'Envers in colour 34 Favue and 17 Ficelle Barenia leather and canvas with Palladium hardware | Collection: G (2026) | Origin: France | Accompanied by: Box, Dustbag, Receipt, Felt | Measurements: (About) W35 × H25 × D18cm | Please be advised that this item is final sale and is not covered by our standard return policy. | Estimated time to dispatch: 2 to 4 weeks. | Canvas/Calf Leather/Palladium | Tote Bags | Bags | Women"
  },
  {
   "src": "FARFETCH",
@@ -3128,7 +3083,8 @@
    "web/fr/Kelly-Danse-Verso_1.png",
    "web/fr/Kelly-Danse-Verso_2.png",
    "web/fr/Kelly-Danse-Verso_3.png"
-  ]
+  ],
+  "desc": "HERMÈS Kelly Danse Verso | Green | Kelly Danse Verso in colour 18 Etoupe and 04 Vert Fonce Evercolor leather with Palladium hardware | Collection: G (2026) | Origin: France | Accompanied by: Box, Dustbag, Shoulder Strap, Receipt, Felt, Base Insert | Measurements: (About) W22 × H17 × D7.5cm | Please be advised that this item is final sale and is not covered by our standard return policy. | Estimated time to dispatch: 2 to 4 weeks. | Calf Leather/Palladium Plated Brass | Clutch Bags | Bags | Women"
  },
  {
   "src": "FARFETCH",
@@ -3157,19 +3113,8 @@
    "web/fr/Birkin-25-Cargo-handbag_1.png",
    "web/fr/Birkin-25-Cargo-handbag_2.png",
    "web/fr/Birkin-25-Cargo-handbag_3.png"
-  ]
- },
- {
-  "src": "FARFETCH",
-  "cat": "Giày",
-  "name": "Chypre Suede Sandals",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 3924,
-  "eur": 3383,
-  "size": "OS",
-  "url": "",
-  "img": ""
+  ],
+  "desc": "HERMÈS Birkin 25 Cargo handbag | marron | cuir de veau/coton | Sacs cabas | Sacs | Homme | Sacs cabas | Sacs | Femme"
  },
  {
   "src": "FARFETCH",
@@ -3191,18 +3136,6 @@
   "cond": "Mới",
   "price": 42074,
   "eur": 36271,
-  "size": "OS",
-  "url": "",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Giày",
-  "name": "Kennedy Loafer",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 4797,
-  "eur": 4135,
   "size": "OS",
   "url": "",
   "img": ""
@@ -3234,135 +3167,11 @@
  {
   "src": "FARFETCH",
   "cat": "Phụ kiện",
-  "name": "Pre-Owned belt buckle cufflinks",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 8146,
-  "eur": 7022,
-  "size": "OS",
-  "url": "",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Phụ kiện",
   "name": "Birkin 30",
   "brand": "HERMÈS",
   "cond": "Mới",
   "price": 44885,
   "eur": 38694,
-  "size": "OS",
-  "url": "",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Phụ kiện",
-  "name": "Eastern Horse Dairy",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 1172,
-  "eur": 1010,
-  "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/men/hermes-eastern-horse-dairy-item-36535834.aspx",
-  "img": "web/fr/Eastern-Horse-Dairy_1.png",
-  "imgs": [
-   "web/fr/Eastern-Horse-Dairy_1.png",
-   "web/fr/Eastern-Horse-Dairy_2.png"
-  ]
- },
- {
-  "src": "FARFETCH",
-  "cat": "Phụ kiện",
-  "name": "Oriental Horse Dessert Plate - Set of 4",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 1850,
-  "eur": 1595,
-  "size": "OS",
-  "url": "",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Phụ kiện",
-  "name": "Oriental Horse Pie Dish",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 2274,
-  "eur": 1960,
-  "size": "OS",
-  "url": "",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Phụ kiện",
-  "name": "Oriental Horse Teacup and Saucer No. 2 - Set of 2 1.485",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 1723,
-  "eur": 1485,
-  "size": "OS",
-  "url": "",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Phụ kiện",
-  "name": "Set of 2 mini Oriental Horse ashtrays",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 1021,
-  "eur": 880,
-  "size": "OS",
-  "url": "",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Phụ kiện",
-  "name": "Natures Marines dessert plate n 1 & 2 (Set of 4 Total/",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 1404,
-  "eur": 1210,
-  "size": "OS",
-  "url": "",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Phụ kiện",
-  "name": "Oriental Horse Dinner Plate - Set of 4",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 1914,
-  "eur": 1650,
-  "size": "OS",
-  "url": "",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Phụ kiện",
-  "name": "Set of 4 mini Oriental Horse ashtrays",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 1786,
-  "eur": 1540,
-  "size": "OS",
-  "url": "",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Phụ kiện",
-  "name": "Marine Nature Dinner Plate No. 2 - set of 2",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 1061,
-  "eur": 915,
   "size": "OS",
   "url": "",
   "img": ""
@@ -3387,42 +3196,6 @@
   "cond": "Mới",
   "price": 37678,
   "eur": 32481,
-  "size": "OS",
-  "url": "",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Giày",
-  "name": "Bouncing sneaker Ecru",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 4604,
-  "eur": 3969,
-  "size": "OS",
-  "url": "",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Phụ kiện",
-  "name": "H-Shaped Belt Buckle Reversible 32mm Belt",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 1798,
-  "eur": 1550,
-  "size": "OS",
-  "url": "",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Trang sức",
-  "name": "Pre-Owned Collier de Chien spinel ring",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 8311,
-  "eur": 7165,
   "size": "OS",
   "url": "",
   "img": ""
@@ -4114,18 +3887,6 @@
  {
   "src": "FARFETCH",
   "cat": "Phụ kiện",
-  "name": "Pre-Owned Rolex pre-owned Datejust 36mm",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 13803,
-  "eur": 11899.0,
-  "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/rolex-pre-owned-datejust-36mm-item-27873122.aspx",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Phụ kiện",
   "name": "Pre-Owned Rolex 2023 pre-owned Cosmograph Daytona 40mm",
   "brand": "HERMÈS",
   "cond": "Mới",
@@ -4198,18 +3959,6 @@
  {
   "src": "FARFETCH",
   "cat": "Đồng hồ",
-  "name": "Pre-Owned Rolex 1975 Datejust 36mm watch",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 6995,
-  "eur": 6030.0,
-  "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/rolex-1975-datejust-36mm-watch-item-35182822.aspx",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Đồng hồ",
   "name": "Pre-Owned Rolex 2025 Day-Date 40mm watch",
   "brand": "HERMÈS",
   "cond": "Mới",
@@ -4217,42 +3966,6 @@
   "eur": 105080.0,
   "size": "OS",
   "url": "https://www.farfetch.com/fr/shopping/women/rolex-2025-day-date-40mm-watch-item-35227796.aspx",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Đồng hồ",
-  "name": "Pre-Owned Rolex Datejust 36mm watch",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 19843,
-  "eur": 17106.0,
-  "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/rolex-datejust-36mm-watch-item-37345433.aspx",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Đồng hồ",
-  "name": "Pre-Owned Rolex Datejust fluted bezel 36mm watch",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 7937,
-  "eur": 6842.0,
-  "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/rolex-datejust-fluted-bezel-36mm-watch-item-37680166.aspx",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Giày",
-  "name": "Chypre Suede Sandals",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 4054,
-  "eur": 3495.0,
-  "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/hermes-chypre-suede-sandals-item-33907502.aspx",
   "img": ""
  },
  {
@@ -4293,30 +4006,6 @@
  },
  {
   "src": "FARFETCH",
-  "cat": "Trang sức",
-  "name": "Pre-Owned Galop diamond bracelet",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 9807,
-  "eur": 8454.0,
-  "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/hermes-galop-diamond-bracelet-item-38469601.aspx",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Giày",
-  "name": "Chypre Leather Sandals",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 4103,
-  "eur": 3537.0,
-  "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/hermes-chypre-leather-sandals-item-36100191.aspx",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
   "cat": "Túi",
   "name": "Constance 18",
   "brand": "HERMÈS",
@@ -4349,18 +4038,6 @@
   "eur": 48437.0,
   "size": "OS",
   "url": "https://www.farfetch.com/fr/shopping/women/hermes-mini-kelly-ii-item-36921614.aspx",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Trang sức",
-  "name": "Vertige Coeur Bracelet",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 4030,
-  "eur": 3474.0,
-  "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/hermes-vertige-coeur-bracelet-item-34172023.aspx",
   "img": ""
  },
  {
@@ -4445,18 +4122,6 @@
   "eur": 11550.0,
   "size": "OS",
   "url": "https://www.farfetch.com/fr/shopping/women/hermes-mini-lindy-tote-bag-item-32934919.aspx",
-  "img": ""
- },
- {
-  "src": "FARFETCH",
-  "cat": "Khăn",
-  "name": "Square 90 The Spirit Takes Flight Scarf",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 1218,
-  "eur": 1050.0,
-  "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/hermes-square-90-the-spirit-takes-flight-scarf-item-37425364.aspx",
   "img": ""
  },
  {

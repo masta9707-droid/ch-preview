@@ -78,7 +78,7 @@ async function boot(){
   items = await (await fetch('items.json')).json();
   const nch = items.filter(i=>i.src==='CHROMEHEARTS').length;
   const nfr = items.length - nch;
-  document.getElementById('meta').textContent = items.length + ' món — giá USD' + (nfr? ' (Farfetch quy đổi 1€ = $1.16)':'');
+  document.getElementById('meta').textContent = items.length + ' món — giá USD' + (nfr? ' (quy đổi 1€ = $1.16)':'');
   render();
 }
 function render(){
@@ -87,7 +87,7 @@ function render(){
   const nfr = items.length - nch;
   g.innerHTML =
     '<div class="gtab '+(group==='CH'?'on':'')+'" onclick="setGroup(\'CH\')">Chrome Hearts<small>'+nch+' món</small></div>' +
-    (nfr? '<div class="gtab '+(group==='FR'?'on':'')+'" onclick="setGroup(\'FR\')">Hermès Farfetch Pháp<small>'+nfr+' món · đang bổ sung ảnh</small></div>':'');
+    (nfr? '<div class="gtab '+(group==='FR'?'on':'')+'" onclick="setGroup(\'FR\')">Hermès Pháp<small>'+nfr+' món · đang bổ sung ảnh</small></div>':'');
   document.querySelectorAll('.gtab').forEach(t=>t.style.flex='1');
   const cats = (group==='CH'?CH_CATS:FR_CATS).filter(c=>items.some(i=>(group==='CH'?'CHROMEHEARTS':'FARFETCH')===i.src&&i.cat===c));
   const tb = document.getElementById('tabs');
@@ -102,7 +102,7 @@ let cur = [];
 function card(i,k){
   const img = i.img ? '<img class="ph" loading="lazy" src="'+i.img+'" alt="">' : '<div class="noph">'+(i.brand||'')+'<br>chờ ảnh</div>';
   const sub = [i.size&&i.size!=='OS'?('Size '+i.size):'', i.lens||'', i.color||''].filter(Boolean).join(' · ');
-  const inner = img + '<div class="info"><div class="badge">'+(i.src==='FARFETCH'?'FARFETCH FR · HERMÈS':'CHROME HEARTS')+'</div><div class="nm">'+esc(i.name)+'</div>'
+  const inner = img + '<div class="info"><div class="badge">'+(i.src==='FARFETCH'?'HERMÈS':'CHROME HEARTS')+'</div><div class="nm">'+esc(i.name)+'</div>'
     + (sub?'<div class="sub">'+esc(sub)+'</div>':'')
     + '<div class="row"><div class="pr">$'+Number(i.price).toLocaleString('en-US')+(i.eur?' <span class="eur">('+Number(i.eur).toLocaleString('fr-FR')+' €)</span>':'')+'</div><div class="cond '+(i.cond==='Mới'?'new':'')+'">'+(i.cond||'')+'</div></div></div>';
   return '<div class="card" onclick="openDet('+k+')">'+inner+'</div>';
@@ -114,11 +114,11 @@ function openDet(k){
     ? '<div class="gal"><img class="main" id="mImg" src="'+imgs[0]+'" alt=""><div class="thumbs">'+imgs.map((u,x)=>'<img class="'+(x?'':'on')+'" src="'+u+'" onclick="pickImg(this,\''+u+'\')">').join('')+'</div></div>'
     : '<div class="noph" style="aspect-ratio:1/1">'+(i.brand||'')+'<br>chờ ảnh tách nền</div>';
   const sub = [i.size&&i.size!=='OS'?('Size '+i.size):'', i.lens?('Kính '+i.lens):'', i.color||'', i.mat||''].filter(Boolean).join(' · ');
-  document.getElementById('sheetBody').innerHTML = gal + '<div class="det"><div class="badge">'+(i.src==='FARFETCH'?'FARFETCH FR · HERMÈS':'CHROME HEARTS')+'</div>'
+  document.getElementById('sheetBody').innerHTML = gal + '<div class="det"><div class="badge">'+(i.src==='FARFETCH'?'HERMÈS':'CHROME HEARTS')+'</div>'
     + '<div class="nm2">'+esc(i.name)+'</div>' + (sub?'<div class="sub2">'+esc(sub)+'</div>':'')
     + '<div class="pr2">$'+Number(i.price).toLocaleString('en-US')+(i.eur?' <span class="eur2">('+Number(i.eur).toLocaleString('fr-FR')+' €)</span>':'')+'</div>'
     + '<div class="sub2" style="margin-top:6px">Tình trạng: '+esc(i.cond||'—')+' · '+esc(i.cat||'')+'</div>'
-    + (i.url?'<a class="ff" href="'+i.url+'" target="_blank" rel="noopener">Xem nguồn gốc trên Farfetch ↗</a>':'')
+    + (i.desc?'<div style="margin-top:12px;font-size:13px;line-height:1.55;color:#444;border-top:1px solid var(--line);padding-top:12px">'+esc(i.desc)+'</div>':'')
     + '</div>';
   document.getElementById('ov').classList.add('on');
   document.body.style.overflow='hidden';
