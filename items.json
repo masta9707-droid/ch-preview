@@ -2830,15 +2830,20 @@
  },
  {
   "src": "FARFETCH",
-  "cat": "Phụ kiện",
+  "cat": "Túi",
   "name": "Birkin 35 L'Envers",
   "brand": "HERMÈS",
   "cond": "Mới",
   "price": 96779,
   "eur": 83430,
   "size": "OS",
-  "url": "",
-  "img": ""
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-birkin-35-lenvers-item-36746614.aspx",
+  "img": "web/fr/Birkin-35-LEnvers_1.png",
+  "imgs": [
+   "web/fr/Birkin-35-LEnvers_1.png",
+   "web/fr/Birkin-35-LEnvers_2.png",
+   "web/fr/Birkin-35-LEnvers_3.png"
+  ]
  },
  {
   "src": "FARFETCH",
