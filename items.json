@@ -2661,13 +2661,15 @@
   "name": "Birkin 25",
   "brand": "HERMÈS",
   "cond": "Mới",
-  "price": 37360,
-  "eur": 32207,
+  "price": 54823,
+  "eur": 47261,
   "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/hermes-birkin-25-item-34669001.aspx",
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-birkin-25-item-36669047.aspx",
   "img": "web/fr/Birkin-25_1.png",
   "imgs": [
-   "web/fr/Birkin-25_1.png"
+   "web/fr/Birkin-25_1.png",
+   "web/fr/Birkin-25_2.png",
+   "web/fr/Birkin-25_3.png"
   ]
  },
  {
@@ -2775,20 +2777,32 @@
   "price": 6712,
   "eur": 5786,
   "size": "OS",
-  "url": "",
-  "img": ""
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-mini-evelyne-tpm-item-36247449.aspx",
+  "img": "web/fr/Mini-Evelyne-TPM_1.png",
+  "imgs": [
+   "web/fr/Mini-Evelyne-TPM_1.png",
+   "web/fr/Mini-Evelyne-TPM_2.png",
+   "web/fr/Mini-Evelyne-TPM_3.png",
+   "web/fr/Mini-Evelyne-TPM_4.png"
+  ]
  },
  {
   "src": "FARFETCH",
-  "cat": "Phụ kiện",
+  "cat": "Túi",
   "name": "Birkin 30",
   "brand": "HERMÈS",
   "cond": "Mới",
-  "price": 51766,
-  "eur": 44626,
+  "price": 39731,
+  "eur": 34251,
   "size": "OS",
-  "url": "",
-  "img": ""
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-birkin-30-item-36745818.aspx",
+  "img": "web/fr/Birkin-30_1.png",
+  "imgs": [
+   "web/fr/Birkin-30_1.png",
+   "web/fr/Birkin-30_2.png",
+   "web/fr/Birkin-30_3.png",
+   "web/fr/Birkin-30_4.png"
+  ]
  },
  {
   "src": "FARFETCH",
