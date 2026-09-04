@@ -2641,24 +2641,6 @@
  },
  {
   "src": "FARFETCH",
-  "cat": "Phụ kiện",
-  "name": "Kelly 18 belt",
-  "brand": "HERMÈS",
-  "cond": "Mới",
-  "price": 409,
-  "eur": 353,
-  "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/hermes-kelly-18-belt-item-32297700.aspx",
-  "img": "web/fr/Kelly-18-belt_1.png",
-  "imgs": [
-   "web/fr/Kelly-18-belt_1.png",
-   "web/fr/Kelly-18-belt_2.png",
-   "web/fr/Kelly-18-belt_3.png",
-   "web/fr/Kelly-18-belt_4.png"
-  ]
- },
- {
-  "src": "FARFETCH",
   "cat": "Túi",
   "name": "Birkin 25",
   "brand": "HERMÈS",
