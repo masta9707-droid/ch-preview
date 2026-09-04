@@ -2661,14 +2661,16 @@
   "name": "Birkin 25",
   "brand": "HERMÈS",
   "cond": "Mới",
-  "price": 49099,
-  "eur": 42327,
+  "price": 50618,
+  "eur": 43636,
   "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/hermes-birkin-25-item-37174174.aspx",
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-birkin-25-item-37521665.aspx",
   "img": "web/fr/Birkin-25_1.png",
   "imgs": [
    "web/fr/Birkin-25_1.png",
-   "web/fr/Birkin-25_2.png"
+   "web/fr/Birkin-25_2.png",
+   "web/fr/Birkin-25_3.png",
+   "web/fr/Birkin-25_4.png"
   ]
  },
  {
@@ -2773,16 +2775,15 @@
   "name": "Mini Evelyne TPM",
   "brand": "HERMÈS",
   "cond": "Mới",
-  "price": 6712,
-  "eur": 5786,
+  "price": 6654,
+  "eur": 5736,
   "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/hermes-mini-evelyne-tpm-item-36247449.aspx",
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-mini-evelyne-tpm-item-37341167.aspx",
   "img": "web/fr/Mini-Evelyne-TPM_1.png",
   "imgs": [
    "web/fr/Mini-Evelyne-TPM_1.png",
    "web/fr/Mini-Evelyne-TPM_2.png",
-   "web/fr/Mini-Evelyne-TPM_3.png",
-   "web/fr/Mini-Evelyne-TPM_4.png"
+   "web/fr/Mini-Evelyne-TPM_3.png"
   ]
  },
  {
@@ -2791,15 +2792,16 @@
   "name": "Birkin 30",
   "brand": "HERMÈS",
   "cond": "Mới",
-  "price": 42483,
-  "eur": 36623,
+  "price": 46965,
+  "eur": 40487,
   "size": "OS",
-  "url": "https://www.farfetch.com/fr/shopping/women/hermes-birkin-30-item-37222122.aspx",
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-birkin-30-item-37223402.aspx",
   "img": "web/fr/Birkin-30_1.png",
   "imgs": [
    "web/fr/Birkin-30_1.png",
    "web/fr/Birkin-30_2.png",
-   "web/fr/Birkin-30_3.png"
+   "web/fr/Birkin-30_3.png",
+   "web/fr/Birkin-30_4.png"
   ]
  },
  {
@@ -3099,15 +3101,20 @@
  },
  {
   "src": "FARFETCH",
-  "cat": "Phụ kiện",
+  "cat": "Túi",
   "name": "Birkin 35 À L'Envers",
   "brand": "HERMÈS",
   "cond": "Mới",
   "price": 86143,
   "eur": 74261,
   "size": "OS",
-  "url": "",
-  "img": ""
+  "url": "https://www.farfetch.com/fr/shopping/women/hermes-birkin-35-a-lenvers-item-37625383.aspx",
+  "img": "web/fr/Birkin-35-À-LEnvers_1.png",
+  "imgs": [
+   "web/fr/Birkin-35-À-LEnvers_1.png",
+   "web/fr/Birkin-35-À-LEnvers_2.png",
+   "web/fr/Birkin-35-À-LEnvers_3.png"
+  ]
  },
  {
   "src": "FARFETCH",
