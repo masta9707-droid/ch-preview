@@ -73,12 +73,14 @@
 let items = [], group = 'CH', cat = 'all';
 const CH_CATS = ['Kính','Nhẫn','Dây chuyền','Vòng tay','Bông tai','Da','Quần áo','Linh tinh'];
 const FR_CATS = ['Túi','Phụ kiện','Giày','Đồng hồ','Trang sức','Ví & Pochette','Khăn'];
+const srcOf = g => g==='CH'?'CHROMEHEARTS':(g==='CS'?'CAROUSELL_HK':'FARFETCH');
+const badgeOf = i => i.src==='FARFETCH'?'HERMÈS':(i.src==='CAROUSELL_HK'?'CAROUSELL HK':'CHROME HEARTS');
 
 async function boot(){
   items = await (await fetch('items.json')).json();
   const nch = items.filter(i=>i.src==='CHROMEHEARTS').length;
   const nfr = items.length - nch;
-  document.getElementById('meta').textContent = items.length + ' món — giá USD' + (nfr? ' (quy đổi 1€ = $1.16)':'');
+  document.getElementById('meta').textContent = items.length + ' món — giá USD' + (nfr? ' (quy đổi 1€ = $1.16)':'') + ((ncs=items.filter(i=>i.src==='CAROUSELL_HK').length)? ' · 1 HK$ = $0.13':'');
   render();
 }
 function render(){
@@ -87,13 +89,13 @@ function render(){
   const nfr = items.length - nch;
   g.innerHTML =
     '<div class="gtab '+(group==='CH'?'on':'')+'" onclick="setGroup(\'CH\')">Chrome Hearts<small>'+nch+' món</small></div>' +
-    (nfr? '<div class="gtab '+(group==='FR'?'on':'')+'" onclick="setGroup(\'FR\')">Hermès Pháp<small>'+nfr+' món · đang bổ sung ảnh</small></div>':'');
+    (nfr? '<div class="gtab '+(group==='FR'?'on':'')+'" onclick="setGroup(\'FR\')">Hermès Pháp<small>'+nfr+' món · đang bổ sung ảnh</small></div>':'') + (items.some(i=>i.src==='CAROUSELL_HK')? '<div class="gtab '+(group==='CS'?'on':'')+'" onclick="setGroup(\'CS\')">Carousell Hồng Kông<small>'+items.filter(i=>i.src==='CAROUSELL_HK').length+' món · hàng hiệu HK</small></div>':'');
   document.querySelectorAll('.gtab').forEach(t=>t.style.flex='1');
-  const cats = (group==='CH'?CH_CATS:FR_CATS).filter(c=>items.some(i=>(group==='CH'?'CHROMEHEARTS':'FARFETCH')===i.src&&i.cat===c));
+  const cats = (group==='CH'?CH_CATS:FR_CATS).filter(c=>items.some(i=>srcOf(group)===i.src&&i.cat===c));
   const tb = document.getElementById('tabs');
   tb.innerHTML = '<div class="tab '+(cat==='all'?'on':'')+'" onclick="setCat(\'all\')">Tất cả</div>' +
     cats.map(c=>'<div class="tab '+(cat===c?'on':'')+'" onclick="setCat(\''+c+'\')">'+c+'</div>').join('');
-  let list = items.filter(i=>(group==='CH'?'CHROMEHEARTS':'FARFETCH')===i.src && (cat==='all'||i.cat===cat));
+  let list = items.filter(i=>srcOf(group)===i.src && (cat==='all'||i.cat===cat));
   cur = list;
   document.getElementById('grid').innerHTML = list.map((x,k)=>card(x,k)).join('');
   document.getElementById('count').textContent = list.length + ' món';
@@ -102,9 +104,9 @@ let cur = [];
 function card(i,k){
   const img = i.img ? '<img class="ph" loading="lazy" src="'+i.img+'" alt="">' : '<div class="noph">'+(i.brand||'')+'<br>chờ ảnh</div>';
   const sub = [i.size&&i.size!=='OS'?('Size '+i.size):'', i.lens||'', i.color||''].filter(Boolean).join(' · ');
-  const inner = img + '<div class="info"><div class="badge">'+(i.src==='FARFETCH'?'HERMÈS':'CHROME HEARTS')+'</div><div class="nm">'+esc(i.name)+'</div>'
+  const inner = img + '<div class="info"><div class="badge">'+badgeOf(i)+'</div><div class="nm">'+esc(i.name)+'</div>'
     + (sub?'<div class="sub">'+esc(sub)+'</div>':'')
-    + '<div class="row"><div class="pr">$'+Number(i.price).toLocaleString('en-US')+(i.eur?' <span class="eur">('+Number(i.eur).toLocaleString('fr-FR')+' €)</span>':'')+'</div><div class="cond '+(i.cond==='Mới'?'new':'')+'">'+(i.cond||'')+'</div></div></div>';
+    + '<div class="row"><div class="pr">$'+Number(i.price).toLocaleString('en-US')+(i.eur?' <span class="eur">('+Number(i.eur).toLocaleString('fr-FR')+' €)</span>':'')+(i.hkd?' <span class="eur">('+Number(i.hkd).toLocaleString('en-US')+' HK$)</span>':'')+'</div><div class="cond '+(i.cond==='Mới'?'new':'')+'">'+(i.cond||'')+'</div></div></div>';
   return '<div class="card" onclick="openDet('+k+')">'+inner+'</div>';
 }
 function openDet(k){
@@ -114,9 +116,9 @@ function openDet(k){
     ? '<div class="gal"><img class="main" id="mImg" src="'+imgs[0]+'" alt=""><div class="thumbs">'+imgs.map((u,x)=>'<img class="'+(x?'':'on')+'" src="'+u+'" onclick="pickImg(this,\''+u+'\')">').join('')+'</div></div>'
     : '<div class="noph" style="aspect-ratio:1/1">'+(i.brand||'')+'<br>chờ ảnh tách nền</div>';
   const sub = [i.size&&i.size!=='OS'?('Size '+i.size):'', i.lens?('Kính '+i.lens):'', i.color||'', i.mat||''].filter(Boolean).join(' · ');
-  document.getElementById('sheetBody').innerHTML = gal + '<div class="det"><div class="badge">'+(i.src==='FARFETCH'?'HERMÈS':'CHROME HEARTS')+'</div>'
+  document.getElementById('sheetBody').innerHTML = gal + '<div class="det"><div class="badge">'+badgeOf(i)+'</div>'
     + '<div class="nm2">'+esc(i.name)+'</div>' + (sub?'<div class="sub2">'+esc(sub)+'</div>':'')
-    + '<div class="pr2">$'+Number(i.price).toLocaleString('en-US')+(i.eur?' <span class="eur2">('+Number(i.eur).toLocaleString('fr-FR')+' €)</span>':'')+'</div>'
+    + '<div class="pr2">$'+Number(i.price).toLocaleString('en-US')+(i.eur?' <span class="eur2">('+Number(i.eur).toLocaleString('fr-FR')+' €)</span>':'')+(i.hkd?' <span class="eur2">('+Number(i.hkd).toLocaleString('en-US')+' HK$)</span>':'')+'</div>'
     + '<div class="sub2" style="margin-top:6px">Tình trạng: '+esc(i.cond||'—')+' · '+esc(i.cat||'')+'</div>'
     + (i.desc?'<div style="margin-top:12px;font-size:13px;line-height:1.55;color:#444;border-top:1px solid var(--line);padding-top:12px">'+esc(i.desc)+'</div>':'')
     + '</div>';
